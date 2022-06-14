@@ -1,6 +1,6 @@
 // Library
 import React, {Component} from 'react';
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import {HashRouter, Route, Routes} from 'react-router-dom';
 import {ApolloClient, InMemoryCache, ApolloProvider} from '@apollo/client';
 
 // Halaman
@@ -34,7 +34,7 @@ class App extends Component {
   render(){
     return(
         <div>
-          <BrowserRouter>
+          <HashRouter>
             <ApolloProvider client={client}>
               <NavBar />
               <Routes>
@@ -52,7 +52,7 @@ class App extends Component {
                     <Route path="algorithm/article/search/:name" element={<SearchResult/>} />
               </Routes>
             </ApolloProvider>
-          </BrowserRouter>
+          </HashRouter>
         </div>
     )
   }
