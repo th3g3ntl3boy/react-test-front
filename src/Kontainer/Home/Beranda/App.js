@@ -1,6 +1,6 @@
 // Library
 import React, {Component} from 'react';
-import {Route, Routes} from 'react-router-dom';
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import {ApolloClient, InMemoryCache, ApolloProvider} from '@apollo/client';
 
 // Halaman
@@ -34,23 +34,25 @@ class App extends Component {
   render(){
     return(
         <div>
-          <ApolloProvider client={client}>
-            <NavBar />
-            <Routes>
-                  <Route path="/" element={<Beranda />} />
-                  <Route path="/algorithm" element={<Beranda />} />
-                  <Route path="/faq" element={<Faq />} />
-                  <Route path="/about" element={<About/>} />
-                  <Route path="algorithm/descriptive" element={<Descriptive />} />
-                  <Route path="algorithm/classification" element={<Classification />} />
-                  <Route path="algorithm/clustering" element={<Clustering />} />
-                  <Route path="algorithm/prediction" element={<Prediction />} />
-                  <Route path="algorithm/forecasting" element={<Forecasting />} />
-                  <Route path="algorithm/article" element={<Article />} />
-                  <Route path="algorithm/article/:id" element={<DetailsArticle />} />
-                  <Route path="algorithm/article/search/:name" element={<SearchResult/>} />
-            </Routes>
-          </ApolloProvider>
+          <BrowserRouter>
+            <ApolloProvider client={client}>
+              <NavBar />
+              <Routes>
+                    <Route exact path="/" element={<Beranda />} />
+                    <Route path="/algorithm" element={<Beranda />} />
+                    <Route path="/faq" element={<Faq />} />
+                    <Route path="/about" element={<About/>} />
+                    <Route path="algorithm/descriptive" element={<Descriptive />} />
+                    <Route path="algorithm/classification" element={<Classification />} />
+                    <Route path="algorithm/clustering" element={<Clustering />} />
+                    <Route path="algorithm/prediction" element={<Prediction />} />
+                    <Route path="algorithm/forecasting" element={<Forecasting />} />
+                    <Route path="algorithm/article" element={<Article />} />
+                    <Route path="algorithm/article/:id" element={<DetailsArticle />} />
+                    <Route path="algorithm/article/search/:name" element={<SearchResult/>} />
+              </Routes>
+            </ApolloProvider>
+          </BrowserRouter>
         </div>
     )
   }
