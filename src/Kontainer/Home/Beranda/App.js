@@ -37,7 +37,7 @@ class App extends Component {
           <ApolloProvider client={client}>
             <NavBar />
             <Routes>
-                  <Route exact path="/" element={<Beranda />} />
+                  <Route path="" element={<Beranda />} />
                   <Route path="/algorithm" element={<Beranda />} />
                   <Route path="/faq" element={<Faq />} />
                   <Route path="/about" element={<About/>} />
