@@ -19,7 +19,7 @@ const NavBar = () =>{
 
                     <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link as={Link} to={"/algorithm"}>Algorithm</Nav.Link>
+                        <Nav.Link as={Link} to={"/"}>Algorithm</Nav.Link>
                         <Nav.Link as={Link} to={"/faq"}>FAQ</Nav.Link>
                         <Nav.Link as={Link} to={"/about"}>About</Nav.Link>
                         <NavDropdown title="Select Language" id="basic-nav-dropdown">
