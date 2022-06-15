@@ -34,7 +34,7 @@ class App extends Component {
   render(){
     return(
         <div>
-          <HashRouter>
+          <HashRouter basename='/react-test-front'>
             <ApolloProvider client={client}>
               <NavBar />
               <Routes>
