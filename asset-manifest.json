@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-test-front/static/css/main.af5651d4.css",
-    "main.js": "/react-test-front/static/js/main.46917f42.js",
+    "main.js": "/react-test-front/static/js/main.5a684f54.js",
     "static/js/787.a036b0d6.chunk.js": "/react-test-front/static/js/787.a036b0d6.chunk.js",
     "static/media/chad.png": "/react-test-front/static/media/chad.b64de41d4d6fcf3be0fc.png",
     "static/media/1.png": "/react-test-front/static/media/1.2069197f54cc1c823f0e.png",
@@ -11,11 +11,11 @@
     "static/media/4.png": "/react-test-front/static/media/4.b41883adcfaa5e8fbfad.png",
     "index.html": "/react-test-front/index.html",
     "main.af5651d4.css.map": "/react-test-front/static/css/main.af5651d4.css.map",
-    "main.46917f42.js.map": "/react-test-front/static/js/main.46917f42.js.map",
+    "main.5a684f54.js.map": "/react-test-front/static/js/main.5a684f54.js.map",
     "787.a036b0d6.chunk.js.map": "/react-test-front/static/js/787.a036b0d6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.af5651d4.css",
-    "static/js/main.46917f42.js"
+    "static/js/main.5a684f54.js"
   ]
 }
